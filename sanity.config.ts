@@ -1,6 +1,6 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
-import project from './sanity/schemas/project-schema';
+import schemas from './sanity/schemas';
 
 const config = defineConfig({
   title: 'Studio-Lorenz',
@@ -15,7 +15,7 @@ const config = defineConfig({
 
   plugins: [deskTool()],
 
-  schema: { types: [project] },
+  schema: { types: schemas },
 });
 
 export default config;
