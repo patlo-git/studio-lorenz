@@ -19,17 +19,17 @@ export default async function Home() {
 
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-2">
         {projects.map(project => (
-          <div key={project._id} className="border border-gray-500 rounded-lg p-3">
+          <div key={project._id} className="border-2 border-gray-500 rounded-sm p-2">
             {project.image && (
               <Image
                 src={project.image}
                 alt={project.name}
-                width={250}
-                height={100}
-                className="object-cover rounded-lg border border-gray-500"
+                width={750}
+                height={300}
+                className="object-cover rounded-sm border border-gray-500"
               />
             )}
-            <div className="font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
+            <div className="m-2 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
               {project.name}
             </div>
           </div>
