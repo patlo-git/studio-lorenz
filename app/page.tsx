@@ -23,7 +23,7 @@ export default async function Home() {
           <Link
             href={`/projects/${project.slug}`}
             key={project._id}
-            className="border-2 border-gray-500 rounded-sm p-2"
+            className="border-2 border-gray-500 rounded-sm p-2 hover:scale-105 hover:border-blue-500 transition ease-in-out"
           >
             {project.image && (
               <Image
