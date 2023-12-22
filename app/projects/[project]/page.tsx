@@ -1,4 +1,5 @@
 import { getProject } from '@/sanity/sanity-utils';
+import { PortableText } from '@portabletext/react';
 
 type Props = {
   params: { project: string };
@@ -24,6 +25,8 @@ export default async function Project({ params }: Props) {
           View Project
         </a>
       </header>
+
+      <PortableText value={project.content} />
     </div>
   );
 }
