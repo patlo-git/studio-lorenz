@@ -6,7 +6,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <div>
+    <div className="mx-5">
       <h1 className="text-7xl font-extrabold">
         Hey Y&apos;all!
         <br></br>
@@ -19,7 +19,7 @@ export default async function Home() {
 
       <h2 className="mt-24 font-bold text-gray-700 text-3xl">My Projects</h2>
 
-      <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-2">
+      <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-2 gap-8 p-2">
         {projects.map(project => (
           <Link
             href={`/projects/${project.slug}`}
